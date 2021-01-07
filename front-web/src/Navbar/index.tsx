@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from './Logo.svg'; 
 import './styles.css';
 
 function Navbar(){
     return(
         <nav className="main-navbar">
-            <a href="home" className="logo-text">
+            <Link to="/" className="logo-text">
                 <Logo/>
-            </a>
+            </Link>
         </nav>
     )
 }
